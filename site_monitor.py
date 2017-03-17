@@ -37,7 +37,7 @@ while True:
 	print "Check#: " + str(sean)
 	print "--------------------"
 	print "Start Tags: " + str(start_tags)
-	print "End Tags: "	+ str(end_tags)
+	print "End Tags: " + str(end_tags)
 	print "Middle Stuff(Data): " + str(data_)
 	print "Entities: " + str(entities_)
 	print "Charrefs: " + str(charrefs_)

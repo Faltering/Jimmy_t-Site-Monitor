@@ -34,7 +34,7 @@ while True:
 	parser = MyHTMLParser()
 	parser.feed(page_source.text)
 	print "--------------------"
-	print "Check#: " + str(sean)
+	print "Check#: " + str(counter)
 	print "--------------------"
 	print "Start Tags: " + str(start_tags)
 	print "End Tags: " + str(end_tags)

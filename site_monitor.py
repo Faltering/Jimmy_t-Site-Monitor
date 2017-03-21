@@ -1,6 +1,8 @@
 from HTMLParser import HTMLParser
 import requests
 import time
+import os
+
 url = raw_input("Enter Link(http://...): ")
 start_tags = 0
 end_tags = 0
@@ -29,6 +31,7 @@ class MyHTMLParser(HTMLParser):
 		global comments_
 		comments_ += 1
 while True:
+	os.system('cls')
 	headers = {'User-Agent': 'Chrome/39.0.2171.95'}
 	page_source = requests.get(url,headers=headers)
 	parser = MyHTMLParser()

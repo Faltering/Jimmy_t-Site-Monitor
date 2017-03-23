@@ -2,6 +2,7 @@ from HTMLParser import HTMLParser
 import requests
 import time
 import os
+import sys
 
 url = raw_input("Enter Link(http://...): ")
 start_tags = 0
@@ -47,10 +48,14 @@ while True:
 	print "Comments: " + str(comments_)
 	counter += 1
 	print "--------------------"
+	print "Time till refresh:"
+	for i in xrange(4,0,-1):
+		time.sleep(1)
+		sys.stdout.write(str(i)+' ')
+		sys.stdout.flush()
 	start_tags = 0
 	end_tags = 0
 	data_ = 0
 	entities_ = 0
 	charrefs_ = 0
 	comments_ = 0	
-	time.sleep(4)
